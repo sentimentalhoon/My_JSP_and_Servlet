@@ -125,10 +125,10 @@ pageEncoding="UTF-8"%>
   </head>
 
   <body>
-    <div style="width: 100%; margin: auto">
+    <div style="width: 90%; margin : 20px auto">
       <form id="theForm">
         <!-- table start -->
-        <table style="width: 95%">
+        <table style="width: 95%; margin: 0 auto">
           <tr>
             <th colspan="6">
               <p>Step 1 : 2개의 수를 입력 받아 더하기를 하시오.</p>
@@ -184,6 +184,7 @@ pageEncoding="UTF-8"%>
 
         <!-- table end -->
       </form>
+      <br/>
       <div id="ajaxResult"></div>
     </div>
   </body>
@@ -214,7 +215,7 @@ pageEncoding="UTF-8"%>
           success: function (res) {
             // 성공 시 실행
             var innerHtml =
-              "<table style='width: 95%'><tr><th style='width: 25%'>계산 결과</th><td style='width: 50%'><span id='firstNumber'>" +
+              "<table style='width: 95%;margin: 0 auto'><tr><th style='width: 25%'>계산 결과</th><td style='width: 50%'><span id='firstNumber'>" +
               addComma(res.firstNumber) +
               "</span> <span id='op'>" +
               res.op +

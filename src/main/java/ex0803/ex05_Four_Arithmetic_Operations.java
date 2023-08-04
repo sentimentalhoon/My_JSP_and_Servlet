@@ -72,7 +72,20 @@ class FAO {
 	}
 
 	private int getFourOp(int n1, int n2, String op) {
-		return n1 + n2;
+		switch (op) {
+		case "+":
+			return n1 + n2;
+		case "-":
+			return n1 - n2;
+		case "*":
+			return n1 * n2;
+		case "/":
+			return n1 / n2;
+		case "%":
+			return n1 % n2;
+		default:
+			return 0;
+		}
 	}
 
 	public int getFirstNumber() {
