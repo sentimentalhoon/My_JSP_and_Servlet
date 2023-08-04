@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		div {
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+			color: #202122;
+			direction: ltr;
+			font-size: calc(1em * 0.875);
+			line-height: 1.6;
+		}
+
+		table {
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+			direction: ltr;
+			line-height: 1.6;
+			font-size: 100%;
+			background-color: #f8f9fa;
+			color: #202122;
+			margin: 1em 0;
+			border: 1px solid #a2a9b1;
+			border-collapse: collapse;
+			text-align: center;
+		}
+
+		tr {
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+			direction: ltr;
+			line-height: 1.6;
+			font-size: 100%;
+			color: #202122;
+			border-collapse: collapse;
+			text-align: center;
+		}
+
+		th {
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+			direction: ltr;
+			line-height: 1.6;
+			font-size: 100%;
+			color: #202122;
+			border-collapse: collapse;
+			border: 1px solid #a2a9b1;
+			padding: 0.2em 0.4em;
+			background-color: #eaecf0;
+			text-align: center;
+		}
+
+		td {
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+			direction: ltr;
+			line-height: 1.6;
+			font-size: 100%;
+			color: #202122;
+			border-collapse: collapse;
+			text-align: center;
+			border: 1px solid #a2a9b1;
+			padding: 0.2em 0.4em;
+		}
+
+		.p-right {
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+			direction: ltr;
+			line-height: 1.6;
+			font-size: 100%;
+			color: #202122;
+			border-collapse: collapse;
+			text-align: right;
+			margin: 0.5em 0;
+		}
+
+		.p-left {
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+			direction: ltr;
+			line-height: 1.6;
+			font-size: 100%;
+			color: #202122;
+			border-collapse: collapse;
+			text-align: left;
+			margin: 0.5em 0;
+		}
+
+		p {
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+			direction: ltr;
+			line-height: 1.6;
+			font-size: 100%;
+			color: #202122;
+			border-collapse: collapse;
+			text-align: center;
+			margin: 0.5em 0;
+		}
+
+		textarea {
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+			width: 95%;
+			height: 100px;
+			resize: none;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- 
+		Servlet 으로 데이터 전송
+		데이터 전송 규칙 3가지
+		(1) 어디로 보내줄건지 :
+		(2) 어떤 값을 (무엇을) 보내줄건지 :
+		(3) 언제 보내줄건지
+	 -->
+	<div style="width:100%; margin:auto">
+		<form action="Plus" method="get" name="login">
+			<!-- table start -->
+			<table style="width: 600px">
+				<tr>
+					<th colspan="6">
+						<p>Step 1 : 2개의 수를 입력 받아 더하기를 하시오.</p>
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<p>질문</p>
+					</td>
+					<td>
+						<p style="text-align: center"><input type="text" class="form-control" maxlength="100"
+								name="first" /></p>
+					</td>
+					<td>&nbsp&nbsp+&nbsp&nbsp</td>
+					<td>
+						<p style="text-align: center"><input type="text" class="form-control" maxlength="100"
+								name="second" /></p>
+					</td>
+					<td>
+						<p>
+							<input type="submit" class="btn btn-primary" name="submit" value="제출하기" />
+						</p>
+					</td>
+			</table>
+			<!-- table end -->
+		</form>
+	</div>
+</body>
+
+</html>
